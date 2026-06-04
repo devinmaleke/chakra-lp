@@ -1,38 +1,43 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Flower2, Sparkles, HeartHandshake, Footprints } from "lucide-react";
+import {
+  HandFist,
+  PersonStanding,
+  HeartHandshake,
+  Footprints,
+} from "lucide-react";
 
 const services = [
   {
     title: "Reflexology",
     description:
-      "Terapi pijat titik saraf untuk membantu relaksasi dan melancarkan sirkulasi tubuh.",
+      "Sentuhan pada titik saraf kaki yang membantu tubuh kembali seimbang, pikiran lebih ringan, dan energi mengalir alami.",
     icon: Footprints,
   },
   {
-    title: "Aromatherapy",
+    title: "Massage",
     description:
-      "Perawatan relaksasi menggunakan essential oil premium untuk menenangkan pikiran.",
-    icon: Flower2,
+      "Setiap sentuhan membantu melepaskan ketegangan, memberi kenyamanan, dan menghadirkan relaksasi menyeluruh.",
+    icon: PersonStanding,
   },
   {
-    title: "Body Massage",
+    title: "Body Scrub",
     description:
-      "Mengurangi ketegangan otot dan membantu tubuh kembali segar dan rileks.",
+      "Perawatan yang membersihkan dan memperbarui kulit, menjadikannya lebih halus, cerah, dan segar.",
+    icon: HandFist,
+  },
+  {
+    title: "Special Treatment",
+    description:
+      "Perawatan pilihan untuk relaksasi lebih dalam, pemulihan tubuh, dan sensasi yang bertahan lebih lama.",
     icon: HeartHandshake,
-  },
-  {
-    title: "Luxury Treatment",
-    description:
-      "Pengalaman spa premium dengan suasana tenang dan pelayanan eksklusif.",
-    icon: Sparkles,
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-[#F3E9DF] py-24">
+    <section id="services" className="scroll-mt-32 bg-[#F3E9DF] py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* HEADER */}
         <div className="mx-auto mb-16 max-w-2xl text-center">

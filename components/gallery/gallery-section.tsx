@@ -32,7 +32,7 @@ const images = [
 
 export default function GallerySection() {
   return (
-    <section id="gallery" className="bg-[#F3E9DF] py-24">
+    <section id="gallery" className="scroll-mt-32 bg-[#F3E9DF] py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* HEADER */}
         <div className="mx-auto mb-16 max-w-2xl text-center">

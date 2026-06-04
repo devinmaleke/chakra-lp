@@ -104,7 +104,7 @@ import { pricingData } from "@/lib/pricing-data";
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="bg-[#2C2419] py-24">
+    <section id="pricing" className="scroll-mt-32 bg-[#2C2419] py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         {/* ── HEADER ── */}
         <div className="mx-auto mb-16 max-w-2xl text-center">
@@ -195,22 +195,6 @@ export default function PricingSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* ── CTA ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-14 text-center"
-        >
-          <button
-            className="border border-[#C9A96E] bg-transparent px-12 py-3.5 text-[10px] font-light uppercase tracking-[0.28em] text-[#C9A96E] transition-colors hover:bg-[#C9A96E] hover:text-[#1A1410]"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            Book Your Treatment
-          </button>
-        </motion.div>
       </div>
     </section>
   );

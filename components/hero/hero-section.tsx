@@ -60,6 +60,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
@@ -122,8 +123,7 @@ export default function HeroSection() {
             className="mb-10 text-[16px] font-light leading-loose tracking-[0.04em] text-[#F5EEE4]"
           >
             Rasakan pengalaman relaksasi premium dengan terapi reflexology,
-            aromatherapy, dan body treatment yang membantu tubuh kembali
-            seimbang.
+            massage, dan special treatment yang membantu tubuh kembali seimbang.
           </motion.p>
 
           {/* CTAs */}
@@ -131,14 +131,33 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.65 }}
-            className="flex flex-wrap gap-3"
+            className="flex flex-wrap gap-4"
           >
-            <button className="bg-[#C9A96E] px-8 py-3.5 text-[12px] font-normal uppercase tracking-[0.24em] text-[#1A1410] transition-colors hover:bg-[#DFC08A]">
+            {/* Primary CTA */}
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://wa.me/6282177980464?text=Halo%20Chakra,%20saya%20ingin%20melakukan%20reservasi%20treatment.",
+                  "_blank",
+                )
+              }
+              className="rounded-full bg-[#C9A96E] px-8 py-6 text-[#2C2419] transition-all hover:bg-[#DFC08A]"
+            >
               Book Treatment
-            </button>
-            <button className="border border-[#C9A96E]/40 bg-transparent px-7 py-3.5 text-[12px] font-light uppercase tracking-[0.24em] text-[#C9A96E] backdrop-blur-sm transition-colors hover:border-[#C9A96E] hover:text-[#DFC08A]">
+            </Button>
+
+            {/* Secondary CTA */}
+            <Button
+              variant="outline"
+              onClick={() =>
+                document
+                  .querySelector("#services")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="rounded-full border border-[#C9A96E] bg-transparent px-8 py-6 text-[#C9A96E] transition-all hover:bg-[#C9A96E] hover:text-[#2C2419]"
+            >
               View Services
-            </button>
+            </Button>
           </motion.div>
         </div>
       </div>

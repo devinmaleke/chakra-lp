@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function WhatsAppFloat() {
   const phoneNumber = "6282177980464";
 
-  const message = "Halo Chakra Reflexology, saya ingin booking treatment.";
+  const message = "Halo Chakra, saya ingin booking treatment.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message,

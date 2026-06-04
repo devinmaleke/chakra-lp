@@ -5,27 +5,27 @@ import { ShieldCheck, Sparkles, Leaf, CalendarCheck } from "lucide-react";
 
 const benefits = [
   {
-    title: "Certified Therapist",
+    title: "Professional Therapists",
     description:
-      "Terapis profesional dan berpengalaman untuk memberikan treatment terbaik.",
+      "Ditangani oleh terapis profesional dan berpengalaman yang mengutamakan kenyamanan serta kualitas pelayanan terbaik.",
     icon: ShieldCheck,
   },
   {
-    title: "Premium Atmosphere",
+    title: "Calm & Private Ambience",
     description:
-      "Suasana tenang dengan interior elegan untuk pengalaman relaksasi maksimal.",
-    icon: Sparkles,
-  },
-  {
-    title: "Natural Essential Oil",
-    description:
-      "Menggunakan essential oil premium dengan aroma yang menenangkan tubuh dan pikiran.",
+      "Suasana yang tenang, nyaman, dan privat untuk membantu Anda melepaskan penat dari aktivitas sehari-hari.",
     icon: Leaf,
   },
   {
-    title: "Easy Booking",
+    title: "Thoughtful Techniques",
     description:
-      "Reservasi mudah melalui WhatsApp dengan respon cepat dan fleksibel.",
+      "Setiap treatment dilakukan dengan teknik yang tepat untuk membantu meredakan ketegangan dan mengembalikan keseimbangan tubuh.",
+    icon: Sparkles,
+  },
+  {
+    title: "Personalized Experience",
+    description:
+      "Setiap sesi disesuaikan dengan kebutuhan dan preferensi Anda untuk memberikan pengalaman relaksasi yang lebih personal.",
     icon: CalendarCheck,
   },
 ];
