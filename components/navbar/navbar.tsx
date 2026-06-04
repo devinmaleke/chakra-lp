@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -34,11 +35,18 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-black/5 bg-white/70 backdrop-blur-xl">
+    <header className="fixed top-0 z-50 w-full bg-[#F7F2EC] backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* LOGO */}
-        <Link href="/" className="heading-font text-3xl text-[#3B3B3B]">
-          Chakra
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.svg"
+            alt="Chakra Reflexology"
+            width={140}
+            height={40}
+            className="h-auto w-[120px] md:w-[140px]"
+            priority
+          />
         </Link>
 
         {/* DESKTOP NAV */}
@@ -72,10 +80,17 @@ export default function Navbar() {
 
             <SheetContent side="right" className="border-none bg-[#F7F2EC]">
               <SheetHeader>
-                <SheetTitle className="heading-font text-2xl text-[#3B3B3B]">
-                  Chakra Reflexology
+                <SheetTitle>
+                  <Image
+                    src="/logo.svg"
+                    alt="Chakra Reflexology"
+                    width={160}
+                    height={50}
+                    className="h-auto w-[140px]"
+                  />
                 </SheetTitle>
               </SheetHeader>
+
               <div className="mt-16 flex flex-col gap-8">
                 {/* NAV ITEMS */}
                 {navItems.map((item) => (
