@@ -91,9 +91,9 @@ export default function BenefitsSection() {
                   {/* Left accent line on hover */}
                   <div className="absolute bottom-0 left-0 top-0 w-[2px] bg-gradient-to-b from-transparent via-[#C9A96E] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-                  <div className="flex items-start gap-6">
+                  <div className="flex items-center gap-6">
                     {/* Icon */}
-                    <div className="mt-1 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-[#C9A96E]/15 bg-[#4A3B2D] text-[#C9A96E] transition-all duration-500 group-hover:border-[#C9A96E]/40 group-hover:bg-[#C9A96E] group-hover:text-[#2C2419]">
+                    <div className="mt-2 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-[#C9A96E]/15 bg-[#4A3B2D] text-[#C9A96E] transition-all duration-500 group-hover:border-[#C9A96E]/40 group-hover:bg-[#C9A96E] group-hover:text-[#2C2419]">
                       <Icon size={22} strokeWidth={1.7} />
                     </div>
 
@@ -101,6 +101,7 @@ export default function BenefitsSection() {
                       <h3 className="heading-font mb-3 text-[22px] leading-none text-[#F5EEE4] transition-colors duration-300 group-hover:text-white">
                         {benefit.title}
                       </h3>
+
                       <p className="text-sm leading-7 tracking-[0.02em] text-[#9B8C7B] transition-colors duration-300 group-hover:text-[#D8CCBE]">
                         {benefit.description}
                       </p>
