@@ -33,7 +33,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="bg-[#F3E9DF] py-16 md:py-24">
+    <section id="FAQ" className="scroll-mt-32 bg-[#F3E9DF] py-16 md:py-24">
       <style>{`
         .faq-content {
           display: grid;

@@ -20,12 +20,16 @@ const navItems = [
     href: "#services",
   },
   {
+    label: "Gallery",
+    href: "#gallery",
+  },
+  {
     label: "Pricing",
     href: "#pricing",
   },
   {
-    label: "Gallery",
-    href: "#gallery",
+    label: "FAQ",
+    href: "#FAQ",
   },
   {
     label: "Contact",
