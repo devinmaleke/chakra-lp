@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ShieldCheck, Sparkles, Leaf, CalendarCheck } from "lucide-react";
+import Image from "next/image";
 
 const benefits = [
   {
@@ -67,9 +68,11 @@ export default function BenefitsSection() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-[32px]"
           >
-            <img
+            <Image
               src="/benefit.webp"
-              alt="Spa Interior"
+              alt="Therapy Chakra Family Massage Depok"
+              width={1200}
+              height={540}
               className="h-[540px] w-full rounded-[32px] object-cover"
               style={{ filter: "brightness(0.8) saturate(0.85)" }}
             />

@@ -67,7 +67,7 @@ export default function GallerySection() {
             >
               <Image
                 src={image.src}
-                alt="Spa Gallery"
+                alt="Ruang treatment Chakra Reflexology Depok"
                 fill
                 className="object-cover transition duration-700 group-hover:scale-105"
               />

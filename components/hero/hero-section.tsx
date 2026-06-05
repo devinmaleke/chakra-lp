@@ -61,16 +61,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* ── BACKGROUND IMAGE (full bleed) ── */}
-      <img
+      <Image
         src="/hero.webp"
-        alt=""
+        alt="Interior premium Chakra Reflexology"
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-cover"
+        fill
+        priority
+        sizes="100vw"
+        className="absolute inset-0 object-cover"
         style={{ filter: "brightness(0.75) saturate(0.85)" }}
       />
 

@@ -7,11 +7,13 @@ import PricingSection from "@/components/pricing/pricing-section";
 import WhatsAppFloat from "@/components/whatsapp/whatsapp-float";
 import FAQSection from "@/components/faq/faq-section";
 import FooterSection from "@/components/footer/footer-section";
+import FAQSchema from "@/components/seo/faq-schema";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#F7F2EC]">
       <Navbar />
+      <FAQSchema />
       <HeroSection />
       <ServicesSection />
       <BenefitsSection />
