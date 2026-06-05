@@ -15,10 +15,9 @@ const tenorSans = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chakra-lp.vercel.app"),
+  metadataBase: new URL("https://chakrareflexology.com"),
 
-  title:
-    "Chakra Reflexology Depok | Family Massage, Reflexology, Shiatsu & Thai",
+  title: "Chakra | Family Massage, Reflexology, Shiatsu & Thai",
 
   description:
     "Nikmati layanan reflexology, massage, maternity massage, body scrub, dan treatment premium di Chakra Reflexology Depok. Terapis profesional, suasana nyaman, dan reservasi mudah via WhatsApp.",
