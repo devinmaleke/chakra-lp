@@ -59,6 +59,7 @@ export default function Navbar() {
       <div className="mx-auto mt-4 flex h-20 max-w-7xl items-center justify-between rounded-full border border-[#C9A96E]/10 bg-[#2C2419]/90 px-6 shadow-[0_8px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl">
         {/* LOGO */}
         <button
+          aria-label="Back to top"
           onClick={() =>
             window.scrollTo({
               top: 0,
@@ -104,8 +105,11 @@ export default function Navbar() {
         <div className="md:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <button className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C9A96E]/20 bg-[#2C2419] text-[#C9A96E]">
-                <Menu />
+              <button
+                aria-label="Open navigation menu"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C9A96E]/20 bg-[#2C2419] text-[#C9A96E]"
+              >
+                <Menu aria-hidden="true" />
               </button>
             </SheetTrigger>
 
