@@ -15,6 +15,8 @@ const tenorSans = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://chakra-lp.vercel.app"),
+
   title:
     "Chakra Reflexology Depok | Family Massage, Reflexology, Shiatsu & Thai",
 
@@ -36,6 +38,19 @@ export const metadata: Metadata = {
     canonical: "https://chakrareflexology.com",
   },
 
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  icons: {
+    icon: "/og-image.png",
+  },
+
   openGraph: {
     title: "Chakra Reflexology Depok",
     description: "Family Massage, Reflexology, Shiatsu & Thai di Depok.",
@@ -52,6 +67,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Chakra Reflexology Depok",
+    description: "Family Massage, Reflexology, Shiatsu & Thai di Depok.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -60,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body className={`${sen.className} ${tenorSans.variable}`}>
         <LocalBusinessSchema />
         {children}
