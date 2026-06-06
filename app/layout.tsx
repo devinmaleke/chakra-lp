@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://chakrareflexology.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Chakra Reflexology Depok",
