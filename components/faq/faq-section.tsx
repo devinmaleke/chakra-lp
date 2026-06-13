@@ -25,8 +25,7 @@ const faqs = [
   },
   {
     question: "Metode pembayaran apa saja yang diterima?",
-    answer:
-      "Kami menerima pembayaran tunai, transfer bank, QRIS, dan e-wallet.",
+    answer: "Kami menerima pembayaran transfer bank, QRIS, dan e-wallet.",
   },
 ];
 
