@@ -18,7 +18,7 @@ export default function HomePage() {
       <ServicesSection />
       <BenefitsSection />
       <GallerySection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <FAQSection />
       <FooterSection />
       <WhatsAppFloat />

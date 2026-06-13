@@ -23,10 +23,10 @@ const navItems = [
     label: "Gallery",
     href: "#gallery",
   },
-  {
-    label: "Pricing",
-    href: "#pricing",
-  },
+  // {
+  //   label: "Pricing",
+  //   href: "#pricing",
+  // },
   {
     label: "FAQ",
     href: "#FAQ",
